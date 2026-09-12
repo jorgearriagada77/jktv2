@@ -1,0 +1,23 @@
+FAMILIAJK TV v3
+
+DISEÑO:
+- Basado en la referencia aprobada: crema, rosa, lila y morado.
+- Logo real FamiliaJK a la izquierda.
+- “Bienvenidos a FamiliaJK TV” grande y protagonista.
+- Tarjetas estilo Smart TV con logos visuales guardados localmente.
+- Filas: Streaming, Música y biblioteca, Fotos y videos, Juegos en familia.
+- Navegación con flechas + Enter.
+- Reloj, fecha y clima local.
+
+ACTUALIZAR GITHUB PAGES:
+1. Descomprime FamiliaJK-TV-v3.zip.
+2. En el repositorio jktv2, reemplaza TODOS los archivos de la raíz.
+3. Sube también la carpeta assets completa.
+4. Haz Commit changes.
+5. Espera que GitHub Pages termine el despliegue.
+6. Abre https://jorgearriagada77.github.io/jktv2/
+7. Si aparece una versión anterior: Ctrl+Shift+R una vez o borra los datos del sitio.
+8. Para reinstalar la PWA, desinstala la versión anterior solo si Chrome no toma el nuevo manifest.
+
+IMPORTANTE:
+Los logos visuales incluidos en assets/ se sirven localmente desde el repositorio, para evitar enlaces rotos.

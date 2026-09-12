@@ -1,5 +1,5 @@
-const CACHE='familiajk-tv-v2-2';
-const ASSETS=['./','./index.html','./manifest.json','./icon-192.png','./icon-512.png','./familiajk-logo.png'];
+const CACHE='familiajk-tv-v3';
+const ASSETS=["./", "./index.html", "./manifest.json", "./familiajk-logo.png", "./icon-192.png", "./icon-512.png", "./assets/gamepad.svg", "./assets/amazon-music.svg", "./assets/minecraft.svg", "./assets/prime-video.svg", "./assets/launcher.svg", "./assets/onedrive.svg", "./assets/apple-tv.svg", "./assets/netflix.svg", "./assets/youtube-kids.svg", "./assets/deezer.svg", "./assets/spotify.svg", "./assets/gallery.svg", "./assets/switch.svg", "./assets/paramount.svg", "./assets/fallguys.svg", "./assets/max.svg", "./assets/roblox.svg", "./assets/drive.svg", "./assets/plex.svg", "./assets/disney-plus.svg", "./assets/google-photos.svg", "./assets/youtube.svg", "./assets/apple-music.svg", "./assets/youtube-music.svg"];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r;}).catch(()=>caches.match(e.request).then(r=>r||caches.match('./index.html'))));});
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(fetch(e.request).then(r=>{const cp=r.clone();caches.open(CACHE).then(c=>c.put(e.request,cp));return r;}).catch(()=>caches.match(e.request).then(r=>r||caches.match('./index.html'))));});
