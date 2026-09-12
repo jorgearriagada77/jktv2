@@ -9,167 +9,372 @@
 <title>FamiliaJK TV</title>
 <style>
 :root{
- --cream:#fff6ed;--cream2:#fdeee6;--pink:#f7a7c5;--pink2:#ff83b2;
- --lav:#d9c1f5;--lav2:#cda7ef;--purple:#6b35b5;--purple2:#4d2490;
- --ink:#412852;--muted:#7f6b86;--white:#fff;
+  --cream:#fff6ed;
+  --cream2:#fceddf;
+  --pink:#f6a8c4;
+  --pink2:#ff83b1;
+  --lav:#ddc9f5;
+  --lav2:#c69de9;
+  --purple:#7443b7;
+  --purple2:#4f258f;
+  --ink:#41294f;
+  --muted:#7e6b85;
+  --white:#ffffff;
 }
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
 body{
- background:
-   radial-gradient(circle at 9% 2%,rgba(210,169,240,.55),transparent 19%),
-   radial-gradient(circle at 47% -7%,rgba(250,175,204,.50),transparent 22%),
-   radial-gradient(circle at 94% 4%,rgba(204,157,237,.65),transparent 24%),
-   linear-gradient(180deg,#fff4eb 0%,#fff9f5 50%,#faefe7 100%);
- overflow-x:hidden;
+  background:
+    radial-gradient(circle at 7% 3%,rgba(221,201,245,.78),transparent 20%),
+    radial-gradient(circle at 46% -8%,rgba(246,168,196,.48),transparent 24%),
+    radial-gradient(circle at 95% 3%,rgba(198,157,233,.55),transparent 23%),
+    linear-gradient(180deg,#fff5ec 0%,#fffaf6 55%,#f8eee7 100%);
+  overflow-x:hidden;
 }
-.shell{max-width:1920px;margin:auto;min-height:100vh;padding:22px 54px 28px;position:relative;overflow:hidden}
-.bgblob{position:absolute;border-radius:50%;filter:blur(1px);opacity:.45;pointer-events:none}
-.b1{width:310px;height:190px;background:#e5b9f2;left:-100px;bottom:-95px}.b2{width:290px;height:190px;background:#d6a7ef;right:-95px;bottom:-90px}
-.header{display:grid;grid-template-columns:270px 1fr 280px;align-items:center;gap:22px;margin-bottom:16px}
-.family-logo{width:190px;height:150px;object-fit:contain;filter:drop-shadow(0 10px 20px rgba(89,42,134,.14))}
+.shell{
+  max-width:1920px;
+  margin:auto;
+  min-height:100vh;
+  padding:22px 52px 28px;
+  position:relative;
+}
+.header{
+  display:grid;
+  grid-template-columns:220px 1fr 270px;
+  align-items:center;
+  gap:18px;
+  margin-bottom:18px;
+}
+.family-logo{
+  width:170px;
+  height:138px;
+  object-fit:contain;
+  filter:drop-shadow(0 10px 18px rgba(94,47,133,.15));
+}
 .title{text-align:center}
-.title .welcome{font-family:"Segoe Script","Brush Script MT",cursive;color:var(--purple);font-size:26px;margin-bottom:-6px}
-.title h1{margin:0;color:var(--purple2);font-family:"Segoe Script","Brush Script MT",cursive;font-size:62px;line-height:1;font-weight:800;letter-spacing:-3px;text-shadow:0 3px 0 rgba(255,255,255,.8)}
-.tagline{display:inline-flex;gap:14px;margin-top:12px;padding:8px 22px;border-radius:999px;background:rgba(221,184,241,.35);color:#63339c;font-weight:800;font-size:13px;letter-spacing:.8px}
-.right-head{display:flex;align-items:center;justify-content:flex-end;gap:18px}
-.family-note{font-family:"Segoe Script","Brush Script MT",cursive;color:#63339c;font-size:19px;line-height:1.25;transform:rotate(-2deg);text-align:center}
-.status{min-width:150px;background:rgba(255,255,255,.68);border:1px solid rgba(112,58,168,.12);border-radius:18px;padding:12px 16px;text-align:center;box-shadow:0 10px 26px rgba(100,53,128,.10)}
-.clock{font-size:24px;font-weight:900;color:var(--purple2)}.date{font-size:11px;color:#715d7b;margin-top:2px}.weather{font-size:11px;color:#715d7b;margin-top:5px}
-.section{margin-top:13px}
-.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;padding:0 3px}
-.section-title{display:flex;align-items:center;gap:10px;color:var(--purple2);font-size:22px;font-weight:900}
-.section-title .ico{font-size:25px}.section-caption{color:#5d318f;font-size:14px;font-weight:700}
-.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,1fr);gap:13px;overflow-x:auto;padding:4px 4px 13px;scrollbar-width:none}.rail::-webkit-scrollbar{display:none}
-.card{
- min-height:112px;border-radius:20px;overflow:hidden;text-decoration:none;outline:none;
- background:#fff;border:1px solid rgba(112,58,168,.11);
- box-shadow:0 9px 22px rgba(89,47,111,.11);
- transition:transform .14s,box-shadow .14s;
- display:flex;align-items:center;justify-content:center;position:relative;
+.title .welcome{
+  font-family:"Segoe Script","Brush Script MT",cursive;
+  color:var(--purple);
+  font-size:26px;
+  margin-bottom:-4px;
 }
-.card img{width:100%;height:100%;object-fit:cover;display:block}
-.card:focus{transform:scale(1.065);box-shadow:0 0 0 4px rgba(112,58,168,.22),0 18px 34px rgba(80,40,115,.23);z-index:10}
-.footer{margin-top:11px;display:flex;justify-content:space-between;align-items:center;color:#67369f}
-.slogan{font-family:"Segoe Script","Brush Script MT",cursive;font-size:17px}
-.controls{display:flex;gap:22px;font-size:12px;font-weight:700}
-.controls button{border:0;background:transparent;color:#67369f;font:inherit;cursor:pointer}
-.hint{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);background:rgba(255,255,255,.88);border:1px solid rgba(103,54,159,.13);border-radius:999px;padding:8px 14px;color:#78647e;font-size:11px;box-shadow:0 6px 18px rgba(89,47,111,.10)}
+.title h1{
+  margin:0;
+  color:var(--purple2);
+  font-family:"Segoe Script","Brush Script MT",cursive;
+  font-size:60px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:-3px;
+}
+.tagline{
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:11px;
+  margin-top:12px;
+  padding:8px 20px;
+  border-radius:999px;
+  background:rgba(218,191,239,.38);
+  color:#63369d;
+  font-size:12px;
+  font-weight:850;
+  letter-spacing:.7px;
+}
+.right-head{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:16px;
+}
+.family-note{
+  font-family:"Segoe Script","Brush Script MT",cursive;
+  color:#6738a0;
+  font-size:18px;
+  line-height:1.2;
+  text-align:center;
+}
+.status{
+  min-width:145px;
+  background:rgba(255,255,255,.75);
+  border:1px solid rgba(112,67,183,.12);
+  border-radius:18px;
+  padding:11px 14px;
+  text-align:center;
+  box-shadow:0 8px 22px rgba(86,42,118,.10);
+}
+.clock{font-size:23px;font-weight:900;color:var(--purple2)}
+.date,.weather{font-size:11px;color:var(--muted);margin-top:3px}
+
+.section{margin-top:15px}
+.section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 3px;
+  margin-bottom:9px;
+}
+.section-title{
+  font-size:22px;
+  font-weight:900;
+  color:var(--purple2);
+}
+.section-caption{
+  font-size:13px;
+  color:#6d3aa2;
+  font-weight:700;
+}
+.rail{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:minmax(185px,1fr);
+  gap:14px;
+  overflow-x:auto;
+  padding:4px 4px 14px;
+  scrollbar-width:none;
+}
+.rail::-webkit-scrollbar{display:none}
+.card{
+  min-height:108px;
+  border-radius:22px;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  text-align:center;
+  outline:none;
+  border:1px solid rgba(100,54,140,.12);
+  box-shadow:0 10px 24px rgba(89,45,113,.10);
+  transition:transform .14s ease, box-shadow .14s ease;
+  font-size:27px;
+  font-weight:900;
+  letter-spacing:-.7px;
+  line-height:1.04;
+}
+.card:focus{
+  transform:scale(1.065);
+  box-shadow:0 0 0 4px rgba(113,62,179,.22),0 20px 38px rgba(82,39,116,.24);
+  z-index:5;
+}
+.c1{background:linear-gradient(145deg,#fff,#ffeef4);color:#8c315e}
+.c2{background:linear-gradient(145deg,#fff,#f1e9ff);color:#5d3399}
+.c3{background:linear-gradient(145deg,#fff,#fff3e9);color:#9a5c38}
+.c4{background:linear-gradient(145deg,#fff,#f6e8f3);color:#7a3e75}
+.c5{background:linear-gradient(145deg,#fff,#eee6fb);color:#4f2c89}
+.c6{background:linear-gradient(145deg,#fff,#fff0f4);color:#a63f68}
+.c7{background:linear-gradient(145deg,#fff,#f4edf8);color:#6b3e83}
+.footer{
+  margin-top:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#6f3ca1;
+}
+.slogan{
+  font-family:"Segoe Script","Brush Script MT",cursive;
+  font-size:17px;
+}
+.controls{display:flex;gap:18px;font-size:12px;font-weight:700}
+.hint{
+  position:fixed;
+  left:50%;
+  bottom:14px;
+  transform:translateX(-50%);
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(103,54,159,.13);
+  border-radius:999px;
+  padding:8px 14px;
+  color:#79687f;
+  font-size:11px;
+  box-shadow:0 6px 18px rgba(89,47,111,.10);
+}
+
 @media(max-width:1150px){
- .shell{padding:18px 28px}.header{grid-template-columns:170px 1fr 190px}.family-logo{width:145px;height:115px}
- .title h1{font-size:47px}.family-note{display:none}.right-head{gap:8px}
+  .shell{padding:18px 28px}
+  .header{grid-template-columns:150px 1fr 185px}
+  .family-logo{width:135px;height:105px}
+  .title h1{font-size:46px}
+  .family-note{display:none}
 }
 @media(max-width:760px){
- .shell{padding:12px 16px}.header{grid-template-columns:90px 1fr 120px;gap:8px}.family-logo{width:90px;height:78px}
- .title .welcome{font-size:16px}.title h1{font-size:31px;letter-spacing:-1px}.tagline{font-size:8px;gap:5px;padding:6px 10px}.status{min-width:110px;padding:7px}.clock{font-size:18px}
- .rail{grid-auto-columns:58vw}.section-title{font-size:18px}.section-caption{display:none}.footer{display:none}.hint{display:none}
+  .shell{padding:12px 16px}
+  .header{grid-template-columns:86px 1fr 115px;gap:7px}
+  .family-logo{width:82px;height:70px}
+  .title .welcome{font-size:15px}
+  .title h1{font-size:30px;letter-spacing:-1px}
+  .tagline{font-size:8px;gap:5px;padding:6px 8px}
+  .status{min-width:105px;padding:7px}
+  .clock{font-size:18px}
+  .rail{grid-auto-columns:60vw}
+  .section-title{font-size:18px}
+  .section-caption{display:none}
+  .footer,.hint{display:none}
 }
 </style>
 </head>
 <body>
 <div class="shell">
-<div class="bgblob b1"></div><div class="bgblob b2"></div>
 <header class="header">
- <img class="family-logo" src="familiajk-logo.png" alt="Familia JK · Los JKers">
- <div class="title">
-   <div class="welcome">Bienvenidos a</div>
-   <h1>FamiliaJK TV</h1>
-   <div class="tagline"><span>PELÍCULAS</span><span>·</span><span>SERIES</span><span>·</span><span>MÚSICA</span><span>·</span><span>MOMENTOS EN FAMILIA</span></div>
- </div>
- <div class="right-head">
-   <div class="family-note">Más que una pantalla,<br>es tiempo en familia ♡</div>
-   <div class="status"><div class="clock" id="clock">--:--</div><div class="date" id="date">--</div><div class="weather" id="weather">Clima local</div></div>
- </div>
+  <img class="family-logo" src="familiajk-logo.png" alt="Familia JK · Los JKers">
+  <div class="title">
+    <div class="welcome">Bienvenidos a</div>
+    <h1>FamiliaJK TV</h1>
+    <div class="tagline">
+      <span>PELÍCULAS</span><span>·</span><span>SERIES</span><span>·</span><span>MÚSICA</span><span>·</span><span>MOMENTOS EN FAMILIA</span>
+    </div>
+  </div>
+  <div class="right-head">
+    <div class="family-note">Más que una pantalla,<br>es tiempo en familia ♡</div>
+    <div class="status">
+      <div class="clock" id="clock">--:--</div>
+      <div class="date" id="date">--</div>
+      <div class="weather" id="weather">Clima local</div>
+    </div>
+  </div>
 </header>
 
 <section class="section">
- <div class="section-head"><div class="section-title"><span class="ico">▣</span>Streaming</div><div class="section-caption">Nuestras favoritas ›</div></div>
- <div class="rail">
-  <a class="card nav" href="https://www.netflix.com/" target="_blank" aria-label="Netflix"><img src="assets/netflix.svg" alt="Netflix"></a>
-  <a class="card nav" href="https://www.disneyplus.com/" target="_blank" aria-label="Disney+"><img src="assets/disney-plus.svg" alt="Disney+"></a>
-  <a class="card nav" href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
-  <a class="card nav" href="https://www.primevideo.com/" target="_blank" aria-label="Prime Video"><img src="assets/prime-video.svg" alt="Prime Video"></a>
-  <a class="card nav" href="https://www.max.com/" target="_blank" aria-label="Max"><img src="assets/max.svg" alt="Max"></a>
-  <a class="card nav" href="https://tv.apple.com/" target="_blank" aria-label="Apple TV"><img src="assets/apple-tv.svg" alt="Apple TV"></a>
-  <a class="card nav" href="https://www.paramountplus.com/" target="_blank" aria-label="Paramount Plus"><img src="assets/paramount.svg" alt="Paramount+"></a>
- </div>
+  <div class="section-head">
+    <div class="section-title">Streaming</div>
+    <div class="section-caption">Nuestras favoritas ›</div>
+  </div>
+  <div class="rail">
+    <a class="card c1 nav" href="https://www.netflix.com/" target="_blank">Netflix</a>
+    <a class="card c2 nav" href="https://www.disneyplus.com/" target="_blank">Disney+</a>
+    <a class="card c3 nav" href="https://www.youtube.com/" target="_blank">YouTube</a>
+    <a class="card c4 nav" href="https://www.primevideo.com/" target="_blank">Prime Video</a>
+    <a class="card c5 nav" href="https://www.max.com/" target="_blank">Max</a>
+    <a class="card c6 nav" href="https://tv.apple.com/" target="_blank">Apple TV</a>
+    <a class="card c7 nav" href="https://www.paramountplus.com/" target="_blank">Paramount+</a>
+  </div>
 </section>
 
 <section class="section">
- <div class="section-head"><div class="section-title"><span class="ico">♫</span>Música y biblioteca</div><div class="section-caption">Lo que suena en casa ›</div></div>
- <div class="rail">
-  <a class="card nav" href="https://open.spotify.com/" target="_blank" aria-label="Spotify"><img src="assets/spotify.svg" alt="Spotify"></a>
-  <a class="card nav" href="https://music.youtube.com/" target="_blank" aria-label="YouTube Music"><img src="assets/youtube-music.svg" alt="YouTube Music"></a>
-  <a class="card nav" href="https://music.apple.com/" target="_blank" aria-label="Apple Music"><img src="assets/apple-music.svg" alt="Apple Music"></a>
-  <a class="card nav" href="https://music.amazon.com/" target="_blank" aria-label="Amazon Music"><img src="assets/amazon-music.svg" alt="Amazon Music"></a>
-  <a class="card nav" href="https://www.deezer.com/" target="_blank" aria-label="Deezer"><img src="assets/deezer.svg" alt="Deezer"></a>
-  <a class="card nav" href="https://app.plex.tv/" target="_blank" aria-label="Plex"><img src="assets/plex.svg" alt="Plex"></a>
- </div>
+  <div class="section-head">
+    <div class="section-title">Música y biblioteca</div>
+    <div class="section-caption">Lo que suena en casa ›</div>
+  </div>
+  <div class="rail">
+    <a class="card c5 nav" href="https://open.spotify.com/" target="_blank">Spotify</a>
+    <a class="card c1 nav" href="https://music.youtube.com/" target="_blank">YouTube Music</a>
+    <a class="card c6 nav" href="https://music.apple.com/" target="_blank">Apple Music</a>
+    <a class="card c3 nav" href="https://music.amazon.com/" target="_blank">Amazon Music</a>
+    <a class="card c2 nav" href="https://www.deezer.com/" target="_blank">Deezer</a>
+    <a class="card c4 nav" href="https://app.plex.tv/" target="_blank">Plex</a>
+  </div>
 </section>
 
 <section class="section">
- <div class="section-head"><div class="section-title"><span class="ico">◉</span>Fotos y videos</div><div class="section-caption">Nuestros recuerdos ›</div></div>
- <div class="rail">
-  <a class="card nav" href="https://photos.google.com/" target="_blank" aria-label="Google Photos"><img src="assets/google-photos.svg" alt="Google Photos"></a>
-  <a class="card nav" href="https://photos.google.com/" target="_blank" aria-label="Galería"><img src="assets/gallery.svg" alt="Galería"></a>
-  <a class="card nav" href="https://drive.google.com/" target="_blank" aria-label="Google Drive"><img src="assets/drive.svg" alt="Google Drive"></a>
-  <a class="card nav" href="https://onedrive.live.com/" target="_blank" aria-label="OneDrive"><img src="assets/onedrive.svg" alt="OneDrive"></a>
-  <a class="card nav" href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
-  <a class="card nav" href="#streaming" aria-label="Aplicaciones"><img src="assets/launcher.svg" alt="Aplicaciones"></a>
- </div>
+  <div class="section-head">
+    <div class="section-title">Fotos y videos</div>
+    <div class="section-caption">Nuestros recuerdos ›</div>
+  </div>
+  <div class="rail">
+    <a class="card c2 nav" href="https://photos.google.com/" target="_blank">Google Photos</a>
+    <a class="card c4 nav" href="https://photos.google.com/" target="_blank">Galería</a>
+    <a class="card c3 nav" href="https://drive.google.com/" target="_blank">Google Drive</a>
+    <a class="card c5 nav" href="https://onedrive.live.com/" target="_blank">OneDrive</a>
+    <a class="card c1 nav" href="https://www.youtube.com/" target="_blank">YouTube</a>
+    <a class="card c7 nav" href="#streaming">Apps</a>
+  </div>
 </section>
 
 <section class="section">
- <div class="section-head"><div class="section-title"><span class="ico">🎮</span>Juegos en familia</div><div class="section-caption">Diversión para todos ›</div></div>
- <div class="rail">
-  <a class="card nav" href="https://www.youtubekids.com/" target="_blank" aria-label="YouTube Kids"><img src="assets/youtube-kids.svg" alt="YouTube Kids"></a>
-  <a class="card nav" href="https://www.minecraft.net/" target="_blank" aria-label="Minecraft"><img src="assets/minecraft.svg" alt="Minecraft"></a>
-  <a class="card nav" href="https://www.roblox.com/" target="_blank" aria-label="Roblox"><img src="assets/roblox.svg" alt="Roblox"></a>
-  <a class="card nav" href="https://www.nintendo.com/switch/" target="_blank" aria-label="Nintendo Switch"><img src="assets/switch.svg" alt="Nintendo Switch"></a>
-  <a class="card nav" href="https://www.fallguys.com/" target="_blank" aria-label="Fall Guys"><img src="assets/fallguys.svg" alt="Fall Guys"></a>
-  <a class="card nav" href="#streaming" aria-label="Juegos"><img src="assets/gamepad.svg" alt="Juegos"></a>
- </div>
+  <div class="section-head">
+    <div class="section-title">Juegos en familia</div>
+    <div class="section-caption">Diversión para todos ›</div>
+  </div>
+  <div class="rail">
+    <a class="card c1 nav" href="https://www.youtubekids.com/" target="_blank">YouTube Kids</a>
+    <a class="card c3 nav" href="https://www.minecraft.net/" target="_blank">Minecraft</a>
+    <a class="card c5 nav" href="https://www.roblox.com/" target="_blank">Roblox</a>
+    <a class="card c6 nav" href="https://www.nintendo.com/switch/" target="_blank">Nintendo Switch</a>
+    <a class="card c2 nav" href="https://www.fallguys.com/" target="_blank">Fall Guys</a>
+    <a class="card c7 nav" href="#streaming">Juegos</a>
+  </div>
 </section>
 
-<footer class="footer"><div class="slogan">♡ Familia que disfruta junta, permanece unida ♡</div><div class="controls"><button>⚙ Configuración</button><span>⌁ Red</span><span>⏻ Apagar</span></div></footer>
+<footer class="footer">
+  <div class="slogan">♡ Familia que disfruta junta, permanece unida ♡</div>
+  <div class="controls"><span>⚙ Configuración</span><span>⌁ Red</span><span>⏻ Apagar</span></div>
+</footer>
 </div>
+
 <div class="hint">↑ ↓ ← → navegar · Enter abrir · Home volver arriba</div>
+
 <script>
 const $=s=>document.querySelector(s);
+
 function updateClock(){
- const d=new Date();
- $('#clock').textContent=d.toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'});
- $('#date').textContent=d.toLocaleDateString('es-CL',{weekday:'short',day:'2-digit',month:'short',year:'numeric'});
+  const d=new Date();
+  $('#clock').textContent=d.toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'});
+  $('#date').textContent=d.toLocaleDateString('es-CL',{weekday:'short',day:'2-digit',month:'short',year:'numeric'});
 }
-updateClock();setInterval(updateClock,30000);
+updateClock();
+setInterval(updateClock,30000);
 
 const weatherNames={0:'Despejado',1:'Mayormente despejado',2:'Parcialmente nublado',3:'Nublado',45:'Neblina',51:'Llovizna',61:'Lluvia',63:'Lluvia',65:'Lluvia fuerte',80:'Chubascos',95:'Tormenta'};
 async function weather(lat,lon){
- try{
-  const r=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&timezone=auto`);
-  const j=await r.json(),c=j.current;
-  $('#weather').textContent=`${Math.round(c.temperature_2m)}° · ${weatherNames[c.weather_code]||'Clima actual'}`;
- }catch(e){$('#weather').textContent='Clima local'}
+  try{
+    const r=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&timezone=auto`);
+    const j=await r.json(),c=j.current;
+    $('#weather').textContent=`${Math.round(c.temperature_2m)}° · ${weatherNames[c.weather_code]||'Clima actual'}`;
+  }catch(e){
+    $('#weather').textContent='Clima local';
+  }
 }
-navigator.geolocation?.getCurrentPosition(p=>weather(p.coords.latitude,p.coords.longitude),()=>{}, {timeout:5000,maximumAge:1800000});
+navigator.geolocation?.getCurrentPosition(
+  p=>weather(p.coords.latitude,p.coords.longitude),
+  ()=>{},
+  {timeout:5000,maximumAge:1800000}
+);
 
-function items(){return [...document.querySelectorAll('.nav')].filter(x=>x.offsetParent!==null)}
-function center(el){const r=el.getBoundingClientRect();return{x:r.left+r.width/2,y:r.top+r.height/2}}
+function items(){
+  return [...document.querySelectorAll('.nav')].filter(x=>x.offsetParent!==null);
+}
+function center(el){
+  const r=el.getBoundingClientRect();
+  return{x:r.left+r.width/2,y:r.top+r.height/2};
+}
 function move(dir){
- const a=items(),cur=document.activeElement;if(!a.includes(cur)){a[0]?.focus();return}
- const c=center(cur);let best=null,score=1e9;
- for(const el of a){if(el===cur)continue;const p=center(el),dx=p.x-c.x,dy=p.y-c.y;
-  if(dir==='left'&&dx>=-8)continue;if(dir==='right'&&dx<=8)continue;if(dir==='up'&&dy>=-8)continue;if(dir==='down'&&dy<=8)continue;
-  const primary=(dir==='left'||dir==='right')?Math.abs(dx):Math.abs(dy),secondary=(dir==='left'||dir==='right')?Math.abs(dy):Math.abs(dx),s=primary+secondary*2.7;
-  if(s<score){score=s;best=el}
- }
- if(best){best.focus({preventScroll:true});best.scrollIntoView({behavior:'smooth',block:'center',inline:'center'})}
+  const a=items(),cur=document.activeElement;
+  if(!a.includes(cur)){a[0]?.focus();return;}
+  const c=center(cur);
+  let best=null,score=1e9;
+  for(const el of a){
+    if(el===cur)continue;
+    const p=center(el),dx=p.x-c.x,dy=p.y-c.y;
+    if(dir==='left'&&dx>=-8)continue;
+    if(dir==='right'&&dx<=8)continue;
+    if(dir==='up'&&dy>=-8)continue;
+    if(dir==='down'&&dy<=8)continue;
+    const primary=(dir==='left'||dir==='right')?Math.abs(dx):Math.abs(dy);
+    const secondary=(dir==='left'||dir==='right')?Math.abs(dy):Math.abs(dx);
+    const s=primary+secondary*2.7;
+    if(s<score){score=s;best=el;}
+  }
+  if(best){
+    best.focus({preventScroll:true});
+    best.scrollIntoView({behavior:'smooth',block:'center',inline:'center'});
+  }
 }
 document.addEventListener('keydown',e=>{
- if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();move(e.key.replace('Arrow','').toLowerCase())}
- if(e.key==='Home'){e.preventDefault();scrollTo({top:0,behavior:'smooth'});items()[0]?.focus()}
+  if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){
+    e.preventDefault();
+    move(e.key.replace('Arrow','').toLowerCase());
+  }
+  if(e.key==='Home'){
+    e.preventDefault();
+    scrollTo({top:0,behavior:'smooth'});
+    items()[0]?.focus();
+  }
 });
 window.addEventListener('load',()=>items()[0]?.focus());
-if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js');
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('./sw.js').catch(()=>{});
+}
 </script>
 </body>
 </html>

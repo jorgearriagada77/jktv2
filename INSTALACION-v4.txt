@@ -1,0 +1,19 @@
+FAMILIAJK TV v4
+
+CAMBIOS PRINCIPALES:
+- Se eliminan completamente los logos de las aplicaciones.
+- Cada tarjeta muestra solo el nombre de la aplicación.
+- Se mantiene la paleta FamiliaJK: crema, rosado, lila, violeta y blanco.
+- Se mantiene el logo real FamiliaJK y la cabecera “Bienvenidos a FamiliaJK TV”.
+- Se mantiene navegación con flechas + Enter.
+- Se mantienen reloj, fecha y clima local.
+- Ya no existe la carpeta assets: la aplicación es más simple y ligera.
+
+ACTUALIZAR GITHUB:
+1. Descomprime este ZIP.
+2. Reemplaza todos los archivos de la raíz de jktv2.
+3. Puedes eliminar la carpeta assets del repositorio, ya no se utiliza.
+4. Haz Commit changes.
+5. Espera el despliegue de GitHub Pages.
+6. Abre https://jorgearriagada77.github.io/jktv2/
+7. Si ves la versión anterior, usa Ctrl+Shift+R una vez o borra los datos del sitio.
