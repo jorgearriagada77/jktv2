@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 170">
+<rect width="600" height="170" rx="26" fill="#119FE5"/>
+<text x="300" y="90" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="57" font-weight="700" fill="#fff">prime video</text>
+<path d="M205 112 C275 142 370 142 432 109" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+<path d="M428 100 L448 108 L436 126" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

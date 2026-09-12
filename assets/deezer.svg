@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 170">
+<rect width="600" height="170" rx="26" fill="#171717"/>
+
+<text x="300" y="102" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="800" fill="#FFFFFF">DEEZER</text>
+<path d="M95 105h14V80H95zm18 0h14V66h-14zm18 0h14V74h-14zm18 0h14V55h-14zm18 0h14V68h-14z" fill="#A855F7"/>
+</svg>
