@@ -1,0 +1,19 @@
+FAMILIAJK TV v2.2
+
+CAMBIOS:
+- Paleta crema, rosado, lila y morado inspirada en la línea visual de las recetas FamiliaJK.
+- Logo real FamiliaJK presente en cabecera y portada.
+- Logos gráficos de Netflix, Disney+, YouTube, Prime Video, Max, Spotify, YouTube Music, Plex y Google Photos.
+- Navegación con flechas + Enter conservada.
+- Compatible con publicación en GitHub Pages.
+
+ACTUALIZACIÓN EN GITHUB:
+1. Descomprime este ZIP.
+2. Sube TODOS los archivos a la raíz de jktv2.
+3. Reemplaza los existentes.
+4. Espera a que GitHub Pages termine el despliegue.
+5. Abre https://jorgearriagada77.github.io/jktv2/
+6. Si ves una versión anterior, usa Ctrl+Shift+R una vez o borra los datos del sitio.
+
+NOTA:
+Los logos de las aplicaciones se cargan desde cdn.simpleicons.org, por lo que requieren conexión a Internet.

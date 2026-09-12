@@ -1,0 +1,10 @@
+FAMILIAJK TV v2.1
+
+1. Sube TODOS los archivos de esta carpeta directamente a la raíz del repositorio jktv2.
+2. Reemplaza los archivos anteriores cuando GitHub lo solicite.
+3. GitHub Pages: Settings > Pages > Deploy from a branch > main > /(root).
+4. Abre https://jorgearriagada77.github.io/jktv2/
+5. Si Chrome conserva la versión anterior: Ctrl+Shift+R o borra los datos del sitio una vez.
+6. Instala la PWA desde Chrome cuando aparezca la opción Instalar.
+
+Esta versión incorpora el logo real Familia JK / Los JKers en cabecera, portada e iconos PWA.

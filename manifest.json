@@ -1,15 +1,25 @@
 {
   "name": "FamiliaJK TV",
-  "short_name": "FamiliaJK TV",
-  "description": "Launcher familiar tipo Smart TV para ChromeOS Flex",
+  "short_name": "JK TV",
+  "description": "Launcher Smart TV Familia JK · Los JKers",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "landscape",
-  "background_color": "#09070d",
-  "theme_color": "#0c0714",
+  "background_color": "#fff7ef",
+  "theme_color": "#f9efe5",
   "icons": [
-    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
-    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
